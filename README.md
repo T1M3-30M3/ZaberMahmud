@@ -1,157 +1,56 @@
-<div align="center">
+# Zaber Mahmud Asif — Security Portfolio
 
-# 🛡️ Zaber Mahmud Asif — Security Portfolio
+A single-page, responsive portfolio site for a cybersecurity researcher / penetration tester, built with plain HTML, CSS and JavaScript (no frameworks, no build step).
 
-**Cybersecurity Researcher · Penetration Tester · Bug Bounty Hunter**
-
-A single-page, fully responsive portfolio built with **zero frameworks** — plain HTML, CSS and JavaScript, no build step required.
-
-[![Live Demo](https://img.shields.io/badge/demo-live-2dd4bf?style=for-the-badge&logo=googlechrome&logoColor=white)](#)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](#-license)
-[![Made with HTML CSS JS](https://img.shields.io/badge/made%20with-HTML%20%7C%20CSS%20%7C%20JS-1f2937?style=for-the-badge)](#-tech-stack)
-
-[![GitHub](https://img.shields.io/badge/GitHub-T1M3--30M3-181717?style=flat-square&logo=github)](https://github.com/T1M3-30M3)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-zaber--mahmud--asif-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/zaber-mahmud-asif)
-[![Email](https://img.shields.io/badge/Email-contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:zabermahmudasif01@gmail.com)
-
-</div>
-
----
-
-## 📖 About
-
-This repository hosts the personal portfolio site of **Zaber Mahmud Asif**, a cybersecurity researcher and penetration tester based in Dhaka, Bangladesh. It showcases skills, certifications, CTF achievements, workshops, and contact information in a terminal-themed, dark-mode design.
-
-## 📑 Table of Contents
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Sections](#-sections)
-- [Getting Started](#-getting-started)
-- [Customizing](#-customizing)
-- [Deploying to GitHub Pages](#-deploying-to-github-pages)
-- [Notes](#-notes)
-- [License](#-license)
-
-## ✨ Features
-
-- 🖥️ Terminal-style hero section with typing animation
-- 📱 Fully responsive layout with mobile hamburger navigation
-- 🎓 Interactive certificate gallery with modal viewer
-- 🏆 CTF & workshop achievement showcase
-- 🌓 Dark theme with CSS custom-property theming
-- ♿ Respects `prefers-reduced-motion` for accessibility
-- 🚀 No frameworks, no build step, no backend — deploy anywhere as static files
-
-## 🧰 Tech Stack
-
-| Category | Technology |
-|---|---|
-| Markup | HTML5 |
-| Styling | CSS3 (custom properties, no preprocessor) |
-| Scripting | Vanilla JavaScript (ES6+) |
-| Icons | Font Awesome 6 |
-| Fonts | Google Fonts — `Inter`, `JetBrains Mono` |
-| Hosting | GitHub Pages (or any static host) |
-
-## 📂 Project Structure
+## Structure
 
 ```
 .
 ├── index.html
-├── terminal.html
 ├── css/
-│   ├── style.css
-│   └── terminal.css
+│   └── style.css
 ├── js/
-│   ├── script.js
-│   └── terminal.js
+│   └── script.js
 └── assets/
-    ├── certs/          # certification images (+ ctf/ subfolder)
-    └── workshop/        # workshop & event images/graphics
+    ├── avatar.svg
+    └── certs/
+        ├── cap.svg
+        ├── cnsp.svg
+        ├── c3sa.svg
+        ├── acp.svg
+        ├── casa.svg
+        ├── secpluscysa.svg
+        ├── google-cyber.svg
+        └── tcm-peh.svg
 ```
 
-## 🧭 Sections
+## Sections
 
-`Home` · `About` · `Skills` · `Experience` · `Certificate` · `Project` · `Achievement` · `Workshop` · `Contact`
+Home · About · Skills · Experience · Certificate · Project · Achievement · Workshop · Contact — all in `index.html`, navigable from the sticky top nav (with a mobile hamburger menu).
 
-All sections live in `index.html` and are navigable from the sticky top nav (with a mobile hamburger menu).
+## Customizing
 
-## 🚀 Getting Started
+- **Photo / avatar** — replace `assets/avatar.svg` with your own photo (`.jpg`/`.png`/`.webp`), and update the `src` in the "About" section of `index.html`.
+- **Certificates** — replace the files in `assets/certs/` with scans or exports of your real certificates (same filenames, or update the `img` paths in the `certificates` array near the top of `js/script.js`). Click/hover behavior and the 60–70vw / 60–70vh modal viewer are already wired up.
+- **CV / Resume link** — there are two placeholder links pointing to `https://drive.google.com/your-cv-link`: one in the hero "Download CV" button, one in the Contact section. Replace both with your real hosted CV link (Google Drive "Anyone with the link can view" share link, Dropbox, etc.) — search `index.html` for `your-cv-link`.
+- **Social icons** — in the Contact section (`class="social-icons"`), the GitHub, Facebook and X/Twitter icons use placeholder `href="#"`. Replace with your real profile URLs; LinkedIn and Email are already filled in.
+- **Copy & data** — all text (experience, skills, achievements, contact details) lives directly in `index.html`; edit it there.
+- **Colors & type** — everything is controlled by CSS custom properties at the top of `css/style.css` (`:root { ... }`).
+- **Contact form** — submits via a `mailto:` link (opens the visitor's email client) so the site can be hosted as fully static with no backend or third-party form service required.
 
-No build tools required — just clone and open.
-
-```bash
-# Clone the repository
-git clone https://github.com/T1M3-30M3/portfolio.git
-cd portfolio
-
-# Open directly in a browser
-open index.html        # macOS
-# or
-start index.html       # Windows
-# or
-xdg-open index.html    # Linux
-```
-
-Optionally serve it locally for a closer-to-production experience:
-
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# then visit http://localhost:8000
-```
-
-## 🛠️ Customizing
-
-| What | Where |
-|---|---|
-| **Photo / avatar** | Replace the avatar asset and update the `src` in the *About* section of `index.html` |
-| **Certificates** | Replace files in `assets/certs/` (same filenames, or update the `certificates` array near the top of `js/script.js`) |
-| **CV / Resume link** | Search `index.html` for `your-cv-link` and replace both placeholder links |
-| **Social icons** | Update `href` values in `class="social-icons"` inside the *Contact* section |
-| **Copy & data** | All text (experience, skills, achievements, contact) lives directly in `index.html` |
-| **Colors & type** | Controlled by CSS custom properties in `:root { ... }` at the top of `css/style.css` |
-| **Contact form** | Submits via `mailto:` — fully static, no backend or third-party service needed |
-
-## 🌐 Deploying to GitHub Pages
+## Hosting on GitHub Pages
 
 1. Create a new GitHub repository (e.g. `your-username.github.io` for a root-level personal site, or any repo name for a project site).
-2. Push these files to the repository root (or a `docs/` folder, or a `gh-pages` branch).
-3. In the repo, go to **Settings → Pages**.
+2. Push these files to the repository root (or to a `docs/` folder, or a `gh-pages` branch — your choice).
+3. In the repository, go to **Settings → Pages**.
 4. Under **Build and deployment → Source**, choose **Deploy from a branch**.
 5. Pick the branch (e.g. `main`) and folder (`/root` or `/docs`), then **Save**.
-6. Your site goes live at:
-   - `https://your-username.github.io/` — if the repo is named `your-username.github.io`
-   - `https://your-username.github.io/repo-name/` — otherwise
+6. Wait a minute for the build, then your site will be live at:
+   - `https://your-username.github.io/` (if the repo is named `your-username.github.io`), or
+   - `https://your-username.github.io/repo-name/` otherwise.
 
-## 📝 Notes
+## Notes
 
-- Fully static site — no inline `<script>` execution of remote content, no `eval`, no server-side code.
+- No inline `<script>` execution of remote/untrusted content, no `eval`, no server-side code — the site is fully static and safe to host as-is.
 - Respects `prefers-reduced-motion` for the terminal typing effect and scroll reveals.
-- Fonts load from Google Fonts (`Inter`, `JetBrains Mono`); remove the `<link>` tags in `index.html` to self-host for a fully offline build.
-
-## 📬 Contact
-
-<div align="left">
-
-[![Email](https://img.shields.io/badge/-zabermahmudasif01%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:zabermahmudasif01@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/-zaber--mahmud--asif-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/zaber-mahmud-asif)
-[![GitHub](https://img.shields.io/badge/-T1M3--30M3-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/T1M3-30M3)
-[![Facebook](https://img.shields.io/badge/-Z4b3r.M4hMu3.As1F-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Z4b3r.M4hMu3.As1F)
-
-</div>
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) — feel free to fork and adapt it for your own portfolio.
-
----
-
-<div align="center">
-
-Made with 🖤 by **Zaber Mahmud Asif**
-
-</div>
+- Fonts are loaded from Google Fonts (`Inter` and `JetBrains Mono`); remove the `<link>` tags in `index.html` and self-host the fonts if you need a fully offline / no-external-request build.

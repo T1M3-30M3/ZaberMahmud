@@ -1006,6 +1006,52 @@ footer a:hover { color: var(--accent); }
   .hero-stats .num { font-size: 21px; }
 }
 
+/* ---------- Extra-small screens ---------- */
+
+@media (max-width: 480px) {
+  .container { padding: 0 18px; }
+  .nav { padding: 0 14px; }
+  .brand { font-size: 13.5px; }
+  .brand span.brand-dot { flex-shrink: 0; }
+
+  section { padding: 60px 0; }
+  .section-head { margin-bottom: 36px; }
+
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { justify-content: center; }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .hero-stats .num { font-size: 18px; }
+  .hero-stats .label { font-size: 10.5px; }
+
+  .terminal-body { font-size: 12.5px; min-height: 220px; padding: 16px 14px 20px; }
+
+  .about-facts { grid-template-columns: 1fr; }
+  .about-photo { max-width: 220px; margin: 0 auto; }
+
+  .skills-grid, .whatido-grid, .platform-grid,
+  .project-grid, .ach-grid, .workshop-grid, .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline { padding-left: 26px; }
+  .timeline-dot { left: -26px; }
+  .timeline-top { flex-direction: column; align-items: flex-start; }
+  .timeline-meta { text-align: left; }
+
+  .cta-banner { flex-direction: column; align-items: flex-start; text-align: left; }
+  .cta-banner .btn { align-self: stretch; justify-content: center; }
+
+  .contact-pill { min-width: 100%; }
+
+  .social-icon { width: 46px; height: 46px; font-size: 16.5px; }
+
+  .cert-modal-panel { width: 94vw; height: 68vh; }
+}
+
 .social-icons {
   display: flex;
   justify-content: center;

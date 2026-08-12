@@ -157,3 +157,10 @@ body.term-page {
   .term-cmd-row .cmd-name { width: auto; }
   .term-screen { font-size: 13px; padding: 16px 14px 30px; }
 }
+
+@media (max-width: 400px) {
+  .term-topbar { padding: 10px 12px; gap: 8px; }
+  .term-topbar .back-link { padding: 5px 9px; font-size: 11.5px; }
+  .term-screen { font-size: 12px; padding: 14px 10px 26px; }
+  #termInput { font-size: 13px; }
+}
