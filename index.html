@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaber Mahmud Asif — Cybersecurity Researcher &amp; Penetration Tester</title>
+  <meta name="description"
+    content="Portfolio of Zaber Mahmud Asif, cybersecurity researcher, penetration tester and bug bounty hunter based in Dhaka, Bangladesh.">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0e1a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%232dd4bf' font-family='monospace'%3E%3E_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#home" class="brand"><span class="brand-dot"></span>d0lph1n@sec:</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#whatido">What I Do</a></li>
+        
+        <li class="nav-dropdown">
+          <a href="#certificate" class="nav-dropdown-toggle">Certs <i class="fa-solid fa-chevron-down nav-caret"></i></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#certificate">Certificates</a></li>
+            <li><a href="#ctf-certificate">CTF Certs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-dropdown">
+          <a href="#experience" class="nav-dropdown-toggle">Experience <i class="fa-solid fa-chevron-down nav-caret"></i></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#corporate-experience">Corporate Experience</a></li>
+			<li><a href="#achievement">Achievement</a></li>
+          </ul>
+        </li>        
+        <li><a href="#project">Project</a></li>
+        <li><a href="#workshop">Workshop</a></li>
+        <li><a href="#problem-solving">Problem Solving</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="terminal.html" class="nav-terminal-link">&gt;_ terminal</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="hero-role">root access granted<span class="cursor"></span></div>
+          <div class="hero-name">Zaber Mahmud Asif</div>
+          <div class="hero-rotator">I am a <span class="rotator-text" id="rotatorText"></span><span
+              class="cursor rotator-cursor"></span></div>
+          <h1 class="hero-headline">breaks systems <span>before attackers do.</span></h1>
+          <p class="lead">Cybersecurity researcher and penetration tester with 3+ years across offensive and defensive
+            security — web, network &amp; API pentesting, VAPT, bug bounty, digital forensics, incident response and
+            blue-team operations. Finalist in 40+ global CTF competitions. Currently expanding into
+            <strong>AI/ML for security</strong> and deepening <strong>SOC</strong> fundamentals.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#certificate" class="btn btn-ghost">View Certificates</a>
+            <a href="https://drive.google.com/your-cv-link" class="btn btn-ghost" id="cvLink" target="_blank"
+              rel="noopener noreferrer">Download CV &#8599;</a>
+            <a href="terminal.html" class="btn btn-ghost">Open Terminal &gt;_</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="num">3+</div>
+              <div class="label">Years Experience</div>
+            </div>
+            <div>
+              <div class="num">40+</div>
+              <div class="label">Global CTFs</div>
+            </div>
+            <div>
+              <div class="num">8</div>
+              <div class="label">Certifications</div>
+            </div>
+          </div>
+        </div>
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title">recon.sh — bash</span>
+          </div>
+          <div class="terminal-body" id="typedTerminal"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">whoami</div>
+          <h2 class="section-title">About</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/zaber_400x400.png" alt="Illustrated placeholder avatar of Zaber Mahmud Asif">
+
+          </div>
+          <div class="about-text reveal">
+            <p>I'm a security researcher and penetration tester based in Dhaka, Bangladesh, with three-plus years of
+              hands-on experience across offensive and defensive cybersecurity. My work spans web, network and API
+              penetration testing, vulnerability assessment (VAPT), digital forensics and incident response — delivered
+              against OWASP, NIST and PTES standards.</p>
+            <p>Outside of client engagements, I compete in capture-the-flag competitions and have reached the finals of
+              40+ global CTF events. As Vice President – Technical at the EWU Cyber Security Club, I lead technical
+              operations for a 750+ member community, running CTFs, workshops and mentoring the next wave of ethical
+              hackers.</p>
+            <div class="about-facts">
+              <div>
+                <div class="k">Location</div>
+                <div class="v">Dhaka, Bangladesh</div>
+              </div>
+              <div>
+                <div class="k">Focus</div>
+                <div class="v">Offensive Security &amp; DFIR</div>
+              </div>
+              <div>
+                <div class="k">Education</div>
+                <div class="v">BSc CSE, East West University</div>
+              </div>
+              <div>
+                <div class="k">Availability</div>
+                <div class="v">Open to opportunities</div>
+              </div>
+              <div>
+                <div class="k">Currently Learning</div>
+                <div class="v">AI/ML for Security · SOC Operations</div>
+              </div>
+              <div>
+                <div class="k">Endpoint Security</div>
+                <div class="v">Kaspersky</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">cat skills.txt</div>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Tooling and technique across the offensive/defensive spectrum, mapped to how I actually
+            use them in engagements.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Offensive Security</h3><span>01</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Web Pentesting</span><span class="chip">Network Pentesting</span><span class="chip">API
+                Pentesting</span><span class="chip">VAPT</span><span class="chip">OWASP Top 10</span><span
+                class="chip">SQLi</span><span class="chip">XSS</span><span class="chip">CSRF</span><span
+                class="chip">SSRF</span><span class="chip">IDOR</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Defensive Security</h3><span>02</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Digital Forensics</span><span class="chip">Incident Response</span><span
+                class="chip">Log Analysis</span><span class="chip">Threat Detection</span><span class="chip">Endpoint
+                Security</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Red Team</h3><span>03</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Recon</span><span class="chip">Enumeration</span><span
+                class="chip">Exploitation</span><span class="chip">Bug Bounty</span><span class="chip">Responsible
+                Disclosure</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Tools</h3><span>04</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Burp Suite</span><span class="chip">Metasploit</span><span
+                class="chip">Nmap</span><span class="chip">Wireshark</span><span class="chip">Ghidra</span><span
+                class="chip">Kali Linux</span><span class="chip">HackTheBox</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Programming</h3><span>05</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">Python</span><span class="chip">Bash</span><span class="chip">C / C++</span><span
+                class="chip">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <h3>Standards &amp; Frameworks</h3><span>06</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip">OWASP</span><span class="chip">PTES</span><span class="chip">NIST CSF</span><span
+                class="chip">CIS Controls</span><span class="chip">CVSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="whatido">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">cat services.txt</div>
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-sub">Where I spend most of my time — from live engagements to training the next
+            generation of hackers.</p>
+        </div>
+
+        <div class="whatido-grid">
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+            <h3>CTF Training</h3>
+            <p>Coaching teammates and club members through CTF categories — web, crypto, forensics and pwn — from
+              fundamentals to competition strategy.</p>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Seminar</h3>
+            <p>Hosting and speaking at seminars and workshops on offensive/defensive security topics for students and
+              community members.</p>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-bug"></i></div>
+            <h3>Pentesting</h3>
+            <p>Web, network and API penetration testing engagements — from recon through exploitation to
+              remediation-ready reporting.</p>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>Vulnerability Testing</h3>
+            <p>Vulnerability assessments (VAPT) mapped against OWASP, NIST and PTES standards to surface and
+              prioritise real risk.</p>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3>Research</h3>
+            <p>Independent security research — digging into new attack techniques, tooling and defensive
+              countermeasures.</p>
+          </div>
+        </div>
+
+        <h3 class="workshop-subhead">Core Strengths</h3>
+        <div class="whatido-grid whatido-grid-strengths">
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <h3>Mentoring</h3>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-chalkboard"></i></div>
+            <h3>Training</h3>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Leadership</h3>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <h3>Problem Solving</h3>
+          </div>
+          <div class="whatido-card reveal">
+            <div class="whatido-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Quick Learner</h3>
+          </div>
+        </div>
+
+        <div class="cta-banner reveal">
+          <div>
+            <h3>Wanna collab, train or learn together?</h3>
+            <p>Open to collaboration, training sessions or a learning partnership — let's connect.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">history | tail -6</div>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item current reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">Vice President – Technical</div>
+                  <div class="timeline-org">EWU Cyber Security Club (EWUCSC)</div>
+                </div>
+                <div class="timeline-meta">Mar 2026 – Present<br>Dhaka, BD</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Lead technical operations for a 750+ member university cybersecurity club</li>
+                <li>Organise CTF events, pentesting workshops and security awareness programs</li>
+                <li>Mentor students in ethical hacking, exploit development and CTF strategies</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">CTF Event Co-Ordinator</div>
+                  <div class="timeline-org">EWU Cyber Security Club</div>
+                </div>
+                <div class="timeline-meta">Oct 2024 – Mar 2026<br>Dhaka, BD</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Designed web, forensics, crypto and pwn CTF challenges</li>
+                <li>Successfully ran 5+ events end to end, from logistics to debriefs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">Trainee Security Engineer</div>
+                  <div class="timeline-org">Smart Technologies (BD) Ltd</div>
+                </div>
+                <div class="timeline-meta">Sep 2025 – Dec 2025<br>Dhaka, BD</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Deployed Kaspersky Endpoint Security; enforced malware, firewall, device and web control policies
+                  enterprise-wide via Security Center</li>
+                <li>Monitored threats, performed incident response and managed patch / signature updates</li>
+                <li>Significantly reduced endpoint vulnerability exposure across managed environments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">Security Researcher</div>
+                  <div class="timeline-org">Hidden Investigations</div>
+                </div>
+                <div class="timeline-meta">Nov 2023 – Mar 2025<br>Dhaka, BD</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Conducted full-scope web, network and API pentests using OWASP Top 10, PTES and CVSS</li>
+                <li>Discovered SQLi, XSS, CSRF, SSRF, IDOR and privilege escalation chains; delivered risk-rated reports
+                  with remediation roadmaps</li>
+                <li>Measurably reduced attack surface for multiple enterprise clients</li>
+                <li>Achieved 3rd place nationally; top finalist in 40+ global CTF events</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">Ethical Hacking &amp; DFIR Intern</div>
+                  <div class="timeline-org">TechnoHacks EduTech</div>
+                </div>
+                <div class="timeline-meta">Dec 2023 – Feb 2024</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Applied DFIR techniques: evidence acquisition, log analysis and malware triage</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <div class="timeline-role">Cybersecurity Trainee &amp; Campus Ambassador</div>
+                  <div class="timeline-org">Cyber Bangla / Hackviser</div>
+                </div>
+                <div class="timeline-meta">Oct 2023 – Present<br>Dhaka / Remote</div>
+              </div>
+              <ul class="timeline-list">
+                <li>Performed threat analysis, network monitoring and practical cyber defense training</li>
+                <li>Hosted security awareness sessions and promoted offensive security platforms</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="certificate">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">ls certificates/</div>
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-sub">Hover or click any certificate to inspect it in full view.</p>
+        </div>
+        <div class="cert-grid" id="certGrid"></div>
+      </div>
+    </section>
+
+    <div class="cert-modal" id="certModal">
+      <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+      <div class="cert-modal-panel">
+        <div class="cert-modal-head">
+          <span id="certModalLabel">certificate.svg</span>
+          <button class="cert-modal-close" id="certModalClose" aria-label="Close">✕</button>
+        </div>
+        <div class="cert-modal-body">
+          <img id="certModalImg" src="" alt="">
+        </div>
+      </div>
+    </div>
+
+    <section id="ctf-certificate">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">ls ctf_certificates/</div>
+          <h2 class="section-title">CTF Certificates</h2>
+          <p class="section-sub">Certificates of participation and achievement from Capture The Flag competitions.
+            Hover or click any certificate to inspect it in full view.</p>
+        </div>
+        <div class="cert-grid" id="ctfCertGrid"></div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">ls -la projects/</div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">A sample of the engagements and builds behind the experience above.</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card reveal">
+            <span class="project-severity sev-medium">CTF infrastructure</span>
+            <h3>EWUCSC Challenge Suite</h3>
+            <p>Designed and deployed 5+ CTF events spanning web, forensics, crypto and pwn categories for a 750+ member
+              club, including challenge authoring, scoring infra and post-event write-ups.</p>
+            <div class="project-tags">
+              <span class="tag">Challenge Design</span><span class="tag">DFIR</span><span class="tag">Event Ops</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-high">Blue team</span>
+            <h3>Enterprise Endpoint Hardening</h3>
+            <p>Rolled out Kaspersky Endpoint Security across an enterprise fleet, tuning malware, firewall, device and
+              web-control policies and cutting endpoint vulnerability exposure through active monitoring.</p>
+            <div class="project-tags">
+              <span class="tag">Kaspersky</span><span class="tag">Incident Response</span><span class="tag">Patch
+                Mgmt</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-medium">CTF tooling</span>
+            <h3>CTF Recon Toolkit</h3>
+            <p>Built a set of Python recon and automation tools for CTF competitions, speeding up enumeration and
+              challenge-solving workflows across web, network and forensics categories.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Automation</span><span class="tag">Recon</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-high">Security tooling</span>
+            <h3>PC Login Activity Monitor</h3>
+            <p>Developed a Python-based monitoring tool that logs and tracks login events on a personal machine,
+              giving visibility into access attempts and usage patterns.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Monitoring</span><span class="tag">Logging</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-high">Blue team</span>
+            <h3>Hands-On Experience: Kaspersky Deployment</h3>
+            <p>Hands-on deployment and administration of Kaspersky Endpoint Security across an enterprise fleet via
+              Security Center — configuring malware, firewall, device-control and web-control policies, and managing
+              patch / signature rollouts.</p>
+            <div class="project-tags">
+              <span class="tag">Kaspersky</span><span class="tag">Endpoint Security</span><span class="tag">Security
+                Center</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="corporate-experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">ls -la corporate/</div>
+          <h2 class="section-title">Corporate Experience</h2>
+          <p class="section-sub">Placeholder demo cards — replace with real corporate engagement details.</p>
+        </div>
+        <div class="project-grid">
+          <div class="project-card reveal">
+            <span class="project-severity sev-medium">Demo</span>
+            <h3>Software Solution Team [Intern]</h3>
+            <p>Deployed and managed Kaspersky Endpoint Security policies, monitored threats and incidents, maintained updates, and reduced endpoint security risks across enterprise environments.</p>
+            <div class="project-tags">
+<span class="tag"><a href="https://drive.google.com/file/d/1TbvpaOfts1QIJr53RjiEfqJT8tIZ1SVK/view?usp=sharing" target="_blank" rel="noopener noreferrer">Certificate</a></span><span class="tag">Placeholder</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-medium">Demo</span>
+            <h3>Corporate Engagement Two</h3>
+            <p>Placeholder description for a corporate engagement. Replace this text with the client, scope and outcome
+              of the work.</p>
+            <div class="project-tags">
+              <span class="tag">Demo</span><span class="tag">Placeholder</span>
+            </div>
+          </div>
+          <div class="project-card reveal">
+            <span class="project-severity sev-medium">Demo</span>
+            <h3>Corporate Engagement Three</h3>
+            <p>Placeholder description for a corporate engagement. Replace this text with the client, scope and outcome
+              of the work.</p>
+            <div class="project-tags">
+              <span class="tag">Demo</span><span class="tag">Placeholder</span>
+            </div>
+          </div>
+      
+         
+        </div>
+      </div>
+    </section>
+
+    <section id="achievement">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">cat achievements.log</div>
+          <h2 class="section-title">Achievements</h2>
+          <p class="section-sub">Hover or click any achievement to inspect it in full view.</p>
+        </div>
+        <div class="cert-grid" id="achievementGrid"></div>
+      </div>
+    </section>
+
+    <section id="workshop">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">history --workshops</div>
+          <h2 class="section-title">Workshops &amp; Training</h2>
+          <p class="section-sub">Sessions I've hosted as organiser, and sessions where I've joined as a guest.</p>
+        </div>
+
+        <h3 class="workshop-subhead">Hosted &amp; Organised</h3>
+        <div class="workshop-grid">
+
+          <div class="workshop-card reveal">
+            <button type="button" class="workshop-thumb" aria-label="View full image: Digital Forensics: Uncovering the Hidden Truth"><img src="assets/workshop/CTF.jpg"
+                alt="Pentesting Workshops — EWUCSC thumbnail" loading="lazy"></button>
+            <div class="workshop-info">
+              <span class="workshop-type type-organised">Organised</span>
+              <h3>Digital Forensics: Uncovering the Hidden Truth</h3>
+              <div class="workshop-loc">Dhaka, Bangladesh</div>
+              <p>Hands-on sessions on Web, Osint and Network Basics for club members.</p>
+              <div class="workshop-links">
+                <a class="icon-btn-sm" href="https://lnkd.in/p/gmHnzKsB" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn"><span>in</span></a>
+                <a class="icon-btn-sm" href="#" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook"><span>f</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="workshop-card reveal">
+            <button type="button" class="workshop-thumb" aria-label="View full image: CTF Events — 5+ Editions"><img src="assets/workshop/OnlineCTF.jpg" alt="CTF Events thumbnail"
+                loading="lazy"></button>
+            <div class="workshop-info">
+              <span class="workshop-type type-organised">Organised</span>
+              <h3>CTF Events — 5+ Editions</h3>
+              <div class="workshop-loc">Dhaka, Bangladesh</div>
+              <p>End-to-end design and delivery of web, forensics, crypto and pwn challenges.</p>
+              <div class="workshop-links">
+                <a class="icon-btn-sm" href="https://shorturl.at/u8eCC" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn"><span>in</span></a>
+                <a class="icon-btn-sm" href="#" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook"><span>f</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="workshop-card reveal">
+            <button type="button" class="workshop-thumb" aria-label="View full image: Security Awareness Sessions"><img src="assets/workshop/DSC02024.JPG"
+                alt="Security Awareness Sessions thumbnail" loading="lazy"></button>
+            <div class="workshop-info">
+              <span class="workshop-type type-organised">Organised</span>
+              <h3>Security Awareness Sessions</h3>
+              <div class="workshop-loc">Dhaka, Bangladesh</div>
+              <p>Practical Cyber Security Pathway For New Comers.</p>
+              <div class="workshop-links">
+                <a class="icon-btn-sm" href="https://linkedin.com/in/zaber-mahmud-asif" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn"><span>in</span></a>
+                <a class="icon-btn-sm" href="#" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook"><span>f</span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="workshop-subhead">As a Guest</h3>
+        <div class="workshop-grid">
+
+          <div class="workshop-card reveal">
+            <button type="button" class="workshop-thumb" aria-label="View full image: Digital Forensics: Uncovering the Hidden Truth (Guest)"><img src="assets/workshop/RUET.jpg"
+                alt="Ethical Hacking and Cybersecurity Webinar thumbnail" loading="lazy"></button>
+            <div class="workshop-info">
+              <span class="workshop-type type-guest">Guest Speaker</span>
+              <h3>Digital Forensics: Uncovering the Hidden Truth</h3>
+              <div class="workshop-loc">Remote / Online</div>
+              <p>Applied session on current offensive security practices.</p>
+              <div class="workshop-links">
+                <a class="icon-btn-sm" href="https://linkedin.com/in/zaber-mahmud-asif" target="_blank"
+                  rel="noopener noreferrer" aria-label="LinkedIn"><span>in</span></a>
+                <a class="icon-btn-sm" href="https://www.facebook.com/share/p/1G4QKWvDNM/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Facebook"><span>f</span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="problem-solving">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">whoami --platforms</div>
+          <h2 class="section-title">Problem Solving</h2>
+          <p class="section-sub">Platforms where I sharpen offensive and defensive skills outside of client
+            engagements.</p>
+        </div>
+        <div class="platform-grid">
+          <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer" class="platform-card reveal">
+            <div class="platform-logo"><i class="fa-solid fa-terminal"></i></div>
+            <h3>TryHackMe</h3>
+          </a>
+          <a href="https://www.hackthebox.com/" target="_blank" rel="noopener noreferrer" class="platform-card reveal">
+            <div class="platform-logo"><i class="fa-solid fa-cube"></i></div>
+            <h3>Hack The Box</h3>
+          </a>
+          <a href="https://hackviser.com/" target="_blank" rel="noopener noreferrer" class="platform-card reveal">
+            <div class="platform-logo"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>HackViser</h3>
+          </a>
+          <a href="https://letsdefend.io/" target="_blank" rel="noopener noreferrer" class="platform-card reveal">
+            <div class="platform-logo"><i class="fa-solid fa-shield"></i></div>
+            <h3>LetsDefend</h3>
+          </a>
+          <a href="https://cyberdefenders.org/" target="_blank" rel="noopener noreferrer" class="platform-card reveal">
+            <div class="platform-logo"><i class="fa-solid fa-user-shield"></i></div>
+            <h3>CyberDefenders</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="border-bottom: none;">
+      <div class="container">
+
+        <div class="section-head reveal">
+          <div class="eyebrow">nc -lvp contact</div>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-sub">
+            Open to security research, pentesting engagements and collaboration.
+            Reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-simple reveal">
+
+          <div class="social-icons reveal">
+
+            <!-- Email -->
+            <a href="mailto:zabermahmudasif01@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/zaber-mahmud-asif" target="_blank" rel="noopener noreferrer"
+              class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/T1M3-30M3" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/zabermahmudasif/" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/Z4b3r.M4hMu3.As1F" target="_blank" rel="noopener noreferrer" class="social-icon"
+              aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-status">zaber@sec:~$ uptime <span class="ok">&mdash; status: online, open to opportunities</span>
+      </p>
+      <p>&copy; <span id="year"></span> Zaber Mahmud Asif. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

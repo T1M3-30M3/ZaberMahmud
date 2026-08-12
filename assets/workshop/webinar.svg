@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <defs>
+    <linearGradient id="bg-WEBINAR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1320"/>
+      <stop offset="1" stop-color="#10151f"/>
+    </linearGradient>
+    <pattern id="grid-WEBINAR" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1c2433" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-WEBINAR)"/>
+  <rect width="400" height="240" fill="url(#grid-WEBINAR)"/>
+  <rect width="400" height="240" fill="rgba(245,196,81,0.10)"/>
+  <circle cx="340" cy="30" r="3" fill="#f5c451"/>
+  <text x="24" y="34" font-family="JetBrains Mono, monospace" font-size="12" fill="#4a5568" letter-spacing="1">// attended</text>
+  <g stroke="#f5c451" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(160,72) scale(2)"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M9 21h6M12 18v3"/><path d="M10 9l5 3-5 3z"/></g>
+  <text x="200" y="205" font-family="JetBrains Mono, monospace" font-weight="700" font-size="15" fill="#f5c451" text-anchor="middle" letter-spacing="2">WEBINAR</text>
+</svg>
